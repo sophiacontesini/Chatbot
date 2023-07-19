@@ -1,0 +1,193 @@
+body {
+  background-color: #acb0b9;
+}
+
+.App {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.App header {
+  background-color: #25565e;
+  height: 10vh;
+  min-height: 50px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  max-width: 600px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 99;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: #8ea6ab;
+}
+
+main {
+  padding: 10px;
+  height: 80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #08bbdb;
+}
+
+form {
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  background-color: #25565e;
+  width: 580px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding: 0 10px;
+}
+
+form button {
+  background-color: #08bbdb;
+  border-radius: 10px;
+}
+
+input {
+  line-height: 2;
+  width: 380px;
+  font-size: 1.5rem;
+  background-color: #063b42;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+.form-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+  align-items: flex-end;
+}
+
+.clear-button {
+  background-color: #08bbdb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.clear-button:hover {
+  background-color: #063b42;
+}
+
+.clear-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button {
+  background-color: #08bbdb;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  width: 80px;
+  height: 40px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sign-in {
+  color: #f3f7ff;
+  background-color: #08bbdb;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 280px;
+  height: 50px;
+}
+
+ul,
+li {
+  text-align: left;
+  list-style: none;
+}
+
+p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: white;
+  background-color: #08bbdb;
+  align-self: flex-end;
+}
+
+.received p {
+  background-color: #36717b;
+  color: white;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
